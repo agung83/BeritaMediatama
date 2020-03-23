@@ -34,7 +34,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="berita.php">
+        <a class="nav-link" href="index.php?page=berita">
             <i class="fas fa-fw fa-book"></i>
             <span>Berita</span></a>
     </li>

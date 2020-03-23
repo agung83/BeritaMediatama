@@ -13,7 +13,7 @@
       <div class="card text-white bg-primary o-hidden h-100">
         <div class="card-body">
           <div class="card-body-icon">
-            <i class="fas fa-fw fa-comments"></i>
+            <i class="fas fa-fw fa-user"></i>
           </div>
           <?php
           $ambil = $koneksi->query("SELECT COUNT(*) FROM tb_admin");
@@ -25,7 +25,7 @@
           <div class="mr-5"><?php echo $pecah['COUNT(*)'] ?> Admin</div>
         </div>
         <a class="card-footer text-white clearfix small z-1" href="index.php?page=admin">
-          <span class="float-left">View Details</span>
+          <span class="float-left">Lihat Details</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
@@ -38,10 +38,16 @@
           <div class="card-body-icon">
             <i class="fas fa-fw fa-list"></i>
           </div>
-          <div class="mr-5">11 New Tasks!</div>
+          <?php
+          $ambil = $koneksi->query("SELECT COUNT(*) FROM tb_kategori");
+          $pecah = $ambil->fetch_assoc();
+
+          ?>
+
+          <div class="mr-5"><?php echo $pecah['COUNT(*)'] ?> Kategori</div>
         </div>
-        <a class="card-footer text-white clearfix small z-1" href="#">
-          <span class="float-left">View Details</span>
+        <a class="card-footer text-white clearfix small z-1" href="">
+          <span class="float-left">Lihat Details</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
@@ -54,10 +60,14 @@
           <div class="card-body-icon">
             <i class="fas fa-fw fa-shopping-cart"></i>
           </div>
-          <div class="mr-5">123 New Orders!</div>
+          <?php
+          $ambil = $koneksi->query("SELECT * FROM tb_berita");
+          $pecah  = mysqli_num_rows($ambil);
+          ?>
+          <div class="mr-5"><?php echo $pecah ?> Berita</div>
         </div>
         <a class="card-footer text-white clearfix small z-1" href="#">
-          <span class="float-left">View Details</span>
+          <span class="float-left">Lihat Details</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
