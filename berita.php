@@ -20,12 +20,12 @@
                     <thead>
                         <tr>
                             <th>Nomor</th>
-                            <th>Nama Admin</th>
-                            <th>Nama Kategori</th>
+                            <th>Admin</th>
+                            <th>Kategori</th>
                             <th>Judul Berita</th>
-                            <th>Tanggal Berita</th>
-                            <th>Isi Berita</th>
-                            <th>Gambar Berita</th>
+                            <th>Tanggal</th>
+                            <th>Berita</th>
+                            <th>Gambar</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -43,10 +43,10 @@
                                 <td><?php echo $pecah['berita_judul'] ?></td>
                                 <td><?php echo $pecah['berita_tgl']; ?></td>
                                 <td><?php echo substr($pecah['berita_isi'], 0, 30)  ?></td>
-                                <td><img src="images/<?php echo $pecah['berita_gambar']; ?>" style="width : 150px; height: 80px;" alt=""></td>
+                                <td><img src="images/<?php echo $pecah['berita_gambar']; ?>" style="width : 100px; height: 80px;" alt=""></td>
                                 <td>
-                                    <a class="btn btn-warning" href="index.php?page=edit_berita&idedit=<?php echo $pecah['berita_id']; ?>">Edit</a>
-                                    <a class="btn btn-danger" href="index.php?page=hapusberita&idhapus=<?php echo $pecah['berita_id']; ?>">Hapus</a>
+                                    <a title="edit" class="btn btn-warning" href="index.php?page=edit_berita&idedit=<?php echo $pecah['berita_id']; ?>"><i class="far fa-edit"></i></a>
+                                    <a title="hapus" class="btn btn-danger" href="index.php?page=hapusberita&idhapus=<?php echo $pecah['berita_id']; ?>"><i class="fas fa-trash-alt"></i></a>
                                 </td>
                                 <?php $nomor++; ?>
                             <?php   } ?>

@@ -39,8 +39,8 @@
                                 <td><?php echo $pecah['admin_password'] ?></td>
                                 <td><?php echo $pecah['admin_nama'] ?></td>
                                 <td>
-                                    <a class="btn btn-warning" href="index.php?page=edit_admin&idedit=<?php echo $pecah['admin_id'] ?>">Edit</a>
-                                    <a class="btn btn-danger" href="index.php?page=hapusadmin&idhapus=<?php echo $pecah['admin_id'] ?>">Hapus</a>
+                                    <a title="edit" class="btn btn-warning" href="index.php?page=edit_admin&idedit=<?php echo $pecah['admin_id'] ?>"><i class="far fa-edit"></i></a>
+                                    <a title="hapus" class="btn btn-danger" href="index.php?page=hapusadmin&idhapus=<?php echo $pecah['admin_id'] ?>"><i class="fas fa-trash-alt"></i></a>
                                 </td>
 
                             </tr>

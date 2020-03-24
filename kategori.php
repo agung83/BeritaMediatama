@@ -36,8 +36,8 @@
                                 <td><?php echo $nomor; ?></td>
                                 <td><?php echo $pecah['kategori_nama']; ?></td>
                                 <td>
-                                    <a class="btn btn-warning" href="index.php?page=edit_kategori&idedit=<?php echo $pecah['kategori_id']; ?>">Edit</a>
-                                    <a class="btn btn-danger" href="index.php?page=hapus_kategori&idhapus=<?php echo $pecah['kategori_id']; ?>">Hapus</a>
+                                    <a title="edit" class="btn btn-warning" href="index.php?page=edit_kategori&idedit=<?php echo $pecah['kategori_id']; ?>"><i class="fas fa-edit"></i></a>
+                                    <a title="hapus" class="btn btn-danger" href="index.php?page=hapus_kategori&idhapus=<?php echo $pecah['kategori_id']; ?>"><i class="fas fa-trash-alt"></i></a>
                                 </td>
                                 <?php $nomor++; ?>
                             <?php } ?>
