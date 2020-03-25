@@ -51,7 +51,7 @@
 
                 <div class="form-group">
                     <label class="font-weight-bold">Tanggal Berita</label>
-                    <input type="date" name="tgl_berita" class="form-control">
+                    <input type="date" name="tgl_berita" class="form-control" value="<?php echo date("Y-m-d"); ?>">
                 </div>
 
                 <div class="form-group">
@@ -88,7 +88,6 @@ if (isset($_POST['save'])) {
     $txt_judul            =  $_POST['judul_berita'];
     $txt_tgl             =  $_POST['tgl_berita'];
     $txt_isiberita        =  $_POST['isiberita'];
-
 
     $nama = $_FILES['berita_gambar']['name'];
     $lokasi = $_FILES['berita_gambar']['tmp_name'];

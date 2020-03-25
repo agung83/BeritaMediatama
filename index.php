@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if (empty($_SESSION['admin'])) {
+
+  echo "
+  <script>
+  alert('anda harus login');
+  window.location='login.php';
+  </script>";
+}
+
+
+?>
+
 <?php include 'partials/koneksi.php'; ?>
 
 

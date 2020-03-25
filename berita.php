@@ -15,6 +15,7 @@
             Data Table Berita</div>
         <div class="card-body">
             <a class="btn btn-primary mb-2" style="margin-top: -10px; " href="index.php?page=tambahberita">Tambah Data</a>
+            <a class="btn btn-success mb-2" style="margin-top: -10px; " href="laporanberita.php" target="_blank">Laporan Berita</a>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>

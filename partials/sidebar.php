@@ -40,7 +40,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="testimoni.php">
+        <a class="nav-link" href="index.php?page=testimoni">
             <i class="fas fa-fw fa-outdent"></i>
             <span>Testimony</span></a>
     </li>

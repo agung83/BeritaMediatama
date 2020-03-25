@@ -23,6 +23,7 @@
                             <th>Username Admin</th>
                             <th>Password Admin</th>
                             <th>Nama Admin</th>
+                            <th>Foto Admin</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -38,6 +39,7 @@
                                 <td><?php echo $pecah['admin_username'] ?></td>
                                 <td><?php echo $pecah['admin_password'] ?></td>
                                 <td><?php echo $pecah['admin_nama'] ?></td>
+                                <td><img src="images/<?php echo $pecah['admin_foto']; ?>" alt="Tidak Ada foto" style="width: 120px; height: 80px; "></td>
                                 <td>
                                     <a title="edit" class="btn btn-warning" href="index.php?page=edit_admin&idedit=<?php echo $pecah['admin_id'] ?>"><i class="far fa-edit"></i></a>
                                     <a title="hapus" class="btn btn-danger" href="index.php?page=hapusadmin&idhapus=<?php echo $pecah['admin_id'] ?>"><i class="fas fa-trash-alt"></i></a>
